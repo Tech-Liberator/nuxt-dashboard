@@ -1,5 +1,7 @@
 <template>
-  <div id="index-layout"></div>
+  <div id="index-layout">
+    <NuxtPage />
+  </div>
 </template>
 
 <script setup lang="ts"></script>
