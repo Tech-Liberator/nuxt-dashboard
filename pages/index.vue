@@ -84,11 +84,15 @@
       <main id="content">
         <div class="text-center py-10 px-4 sm:px-6 lg:px-8">
           <h1 class="block text-2xl font-bold text-white sm:text-4xl">
-            Cover Page
+            Welcome to Nuxt Dashboard: Empowering Nuxt Developers
           </h1>
           <p class="mt-3 text-lg text-gray-300 dark:text-neutral-400">
-            Cover is a one-page template for building simple and beautiful home
-            pages using Tailwind CSS.
+            Unlock the potential of your projects with Nuxt Dashboard. This
+            open-source solution offers a comprehensive toolkit, including a
+            fully functional calendar, custom alerts, loading screens, and
+            authentication components like login, signup, and forget password.
+            Built with Tailwind, Vite, Pinia, and more, it's designed to
+            streamline development and elevate your dashboard experience.
           </p>
           <div
             class="mt-5 flex flex-col justify-center items-center gap-2 sm:flex-row sm:gap-3"
