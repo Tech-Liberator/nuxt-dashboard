@@ -218,7 +218,6 @@ const upload = async (event) => {
   nuxtApp.$loadingScreen(true);
   try {
     const file = event.target.files[0];
-    console.log("file : ", file.name);
     isEdit.value = false;
     nuxtApp.$toast({
       show: true,
@@ -238,7 +237,6 @@ const upload = async (event) => {
 watch(
   () => props.user,
   (user: User) => {
-    console.log("user : ", user);
     if (user) {
       if (user.user_metadata && user.user_metadata.full_name) {
         const fullNameParts = user.user_metadata.full_name.split(" ");

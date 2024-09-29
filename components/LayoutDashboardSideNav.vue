@@ -29,20 +29,20 @@
               <span class="text-md font-medium">Dashboard</span>
             </div>
           </NuxtLink>
-          <NuxtLink to="/dashboard/properties" class="w-full overflow-hidden">
+          <NuxtLink to="/dashboard/users" class="w-full overflow-hidden">
             <div
               class="flex min-w-80 justify-start gap-6 h-12 items-center p-[0.85rem]"
             >
-              <Icon name="heroicons:building-office-2" class="w-5 h-5" />
-              <span class="text-md font-medium">Properties</span>
+              <Icon name="heroicons:user" class="w-5 h-5" />
+              <span class="text-md font-medium">Users</span>
             </div>
           </NuxtLink>
-          <NuxtLink to="/dashboard/clients" class="w-full overflow-hidden">
+          <NuxtLink to="/dashboard/charts" class="w-full overflow-hidden">
             <div
               class="flex min-w-80 justify-start gap-6 h-12 items-center p-[0.85rem]"
             >
-              <Icon name="heroicons:face-smile" class="w-5 h-5" />
-              <span class="text-md font-medium">Clients</span>
+              <Icon name="heroicons:chart-pie" class="w-5 h-5" />
+              <span class="text-md font-medium">Charts</span>
             </div>
           </NuxtLink>
           <NuxtLink to="/dashboard/calendar" class="w-full overflow-hidden">

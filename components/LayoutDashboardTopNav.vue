@@ -3,10 +3,13 @@
     id="dashboard-top-nav"
     class="z-50 max-h-16 h-16 w-full flex bg-white dark:bg-gray-800 text-gray-700 dark:text-white px-5 justify-between items-center sticky top-0 border-b dark:border-gray-700"
   >
+    <!-- navigation buttons start -->
     <button @click="openCloseSideBar(!isSideBarOpen)">
       <Icon name="heroicons:bars-3" class="w-8 h-8" />
     </button>
+    <!-- navigation buttons end -->
     <div class="flex gap-3 h-full items-center">
+      <!-- color mode selector start -->
       <div class="flex gap-2 items-center">
         <Icon name="heroicons:sun" class="w-5 h-5" />
         <Switch
@@ -23,23 +26,30 @@
         </Switch>
         <Icon name="heroicons:moon" class="w-5 h-5" />
       </div>
-      <Menu as="div" class="relative inline-block text-left w-8 h-8">
+      <!-- color mode selector end-->
+      <!-- notifications start-->
+      <button class="rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 w-8 h-8 flex justify-center items-center">
+        <Icon name="heroicons:bell" class="w-5 h-5" />
+      </button>
+      <!-- notifications end -->
+      <!-- user profile start-->
+      <Menu as="div" class="relative inline-block text-left ">
         <MenuButton
           class="w-8 h-8 justify-center rounded-full bg-blue-700 text-white text-xl font-semi"
         >
-          <NuxtImg
+          <!-- <NuxtImg
             class="rounded-full w-full h-full"
             v-if="
               userState &&
               userState.user_metadata &&
               userState.user_metadata.avatar_url
             "
-            src="./user.jpg"
+            src="./img/user.jpg"
           />
-          <p v-else-if="false">
+          <p v-else>
             {{ getInitials("John Doe") }}
-          </p>
-          <p v-else></p>
+          </p> -->
+          <NuxtImg class="rounded-full w-full h-full" src="./img/user.jpg" />
         </MenuButton>
         <transition
           enter-active-class="transition duration-100 ease-out"
@@ -80,6 +90,7 @@
           </MenuItems>
         </transition>
       </Menu>
+      <!-- user profile end -->
     </div>
   </div>
 </template>

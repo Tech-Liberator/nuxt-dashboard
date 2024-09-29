@@ -170,7 +170,6 @@ function getCalendarData(year: number, month: number): DateEvents[] {
 }
 
 function changeMonth(date: DateProp) {
-  console.log("changeMonth : ", date);
   calendarData.value = getCalendarData(date.year, date.month + 1);
 }
 
